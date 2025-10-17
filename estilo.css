@@ -1,0 +1,247 @@
+*{
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+body {
+  background-color: #f7f9fc;
+
+}
+
+/* Cabeçalho */
+header {
+  background-color: #ffffff;
+  padding: 5px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin: 0 0 20px 5px;
+}
+
+.logo {
+  max-width: 180px;
+  height: auto;
+}
+
+/* Menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #379392;
+}
+
+/* Submenu */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+nav ul li:hover .submenu {
+  display: block;
+}
+
+.submenu li a {
+  display: block;
+  padding: 8px 20px;
+  color: #2c3e50;
+  white-space: nowrap;
+}
+
+.submenu li a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Botões sociais */
+.btn {
+  font-size: 18px;
+  color: #379392;
+  margin-left: 10px;
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+
+/*Botões de cadastros*/
+button {
+  background-color: #379392;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  height: 40px;
+}
+
+/* Imagem com texto sobreposto */
+article {
+  position: relative;
+  max-width: 650px;
+  margin: 0 0 20px 5px;
+}
+
+.img-container {
+  height: 750px
+}
+
+.texto-sobreposto {
+  text-align: justify;
+  position: absolute;
+  top: 180px;
+  left: 50px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/*Missão, Visão e Valores*/
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  flex: 1 1 300px;
+}
+
+h2, h3 {
+  margin-bottom: 10px;
+  color: #379392;
+}
+
+/*Sobre Nós*/
+#sobre {
+  display: flex;
+  text-align: justify;
+  gap: 20px;
+  margin: 40px 5px;
+  padding: 20px;
+  background-color: #379392;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  color: white;
+}
+
+#sobre .texto {
+  flex: 1;
+  color: white;
+  font-size: 20px;
+  font-weight: regular;
+  background-color: rgba(0, 0, 0, 0.5); /* fundo semitransparente */
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#sobre img {
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+/* Contato */
+.contato {
+  display: flex;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#contato iframe {
+  width: 60%;
+  border-radius: 8px;
+  margin: 0 20px 0 0;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.info i {
+  font-size: 20px;
+  color: #379392;
+}
+
+footer {
+  background-color: #379392;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+footer p {
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+footer .logo-footer {
+  width: 200px;
+  margin-top: 0;
+}
+
+#botao-topo {
+  position: fixed;
+  display: flex;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #379392;
+  color: #fff;
+  border-radius: 50%; /* Transforma o botão em um círculo */
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 999; /* Garante que o botão fique na frente de outros elementos */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#botao-topo .fas {
+  font-size: 20px;
+}
+
+#botao-topo:hover {
+  background-color: #fff;
+  color: #379392;
+}
